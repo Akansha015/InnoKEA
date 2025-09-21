@@ -1,1 +1,71 @@
-body { font-family: sans-serif; background:#0b1220; color:#fff; margin:0; padding:20px; } .h1{font-size:2em;} .lead{color:#ccc;}
+
+:root{
+  --bg: #0b1220;
+  --bg2:#0d1628;
+  --surface: #121a2b;
+  --text: #e6e9f2;
+  --muted: #9aa4b2;
+  --brand: #62a3ff;
+  --brand-2:#7fc2ff;
+  --ring: #8ab4ff;
+  --border:#26314b;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,var(--bg),var(--bg2) 50%,var(--bg) 100%);color:var(--text)}
+a{color:inherit}
+.container{max-width:1120px;margin:0 auto;padding:0 24px}
+.topbar{border-bottom:1px solid var(--border);background:rgba(18,26,43,.65);backdrop-filter:blur(6px)}
+.util{display:flex;gap:8px;justify-content:flex-end;padding:8px 24px}
+.util button{background:none;border:1px solid var(--border);border-radius:10px;padding:6px 10px;color:var(--text);cursor:pointer}
+nav.site{display:flex;align-items:center;justify-content:space-between;padding:16px 24px}
+.brand{font-weight:800;letter-spacing:.08em;display:flex;align-items:center;gap:10px}
+.menu{display:flex;gap:18px;align-items:center}
+.menu a{opacity:.9;text-decoration:none}
+.cta{background:var(--text);color:#0b1220;padding:10px 14px;border-radius:16px;border:1px solid var(--border)}
+.hamburger{display:none;background:none;border:1px solid var(--border);color:var(--text);padding:8px;border-radius:8px}
+@media(max-width:860px){.menu{display:none}.hamburger{display:inline-flex}}
+.drawer{display:none}
+.drawer.open{display:block}
+.drawer .card{background:var(--surface);border:1px solid var(--border);border-radius:14px;margin:8px 24px;padding:12px}
+.drawer a,.drawer button{display:block;width:100%;padding:12px;text-align:left;border:1px solid var(--border);border-radius:10px;margin:6px 0;background:none;color:var(--text)}
+
+.hero{padding:48px 0 24px}
+.badge{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--surface);padding:6px 10px;border-radius:999px;font-size:14px}
+.h1{font-size:clamp(28px,5vw,52px);line-height:1.1;font-weight:900;margin:16px 0}
+.lead{color:var(--muted);font-size:clamp(16px,2.3vw,18px);max-width:64ch}
+.row{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center}
+@media(max-width:900px){.row{grid-template-columns:1fr}}
+
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media(max-width:680px){.grid2{grid-template-columns:1fr}}
+.tile{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px}
+.tile h3{margin:10px 0 6px}
+
+.section{padding:36px 0}
+.section h2{font-size:24px;margin:8px 0 6px}
+.section p.muted{color:var(--muted)}
+
+.list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+@media(max-width:1000px){.list{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.list{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:16px}
+.card ul{margin:10px 0 0 18px}
+.card li{margin:6px 0}
+
+button{cursor:pointer}
+button.ghost{background:none;border:1px solid var(--border);color:var(--text);padding:10px 14px;border-radius:12px}
+button.primary{background:linear-gradient(90deg,var(--brand),var(--brand-2));border:1px solid var(--border);color:#001;padding:12px 16px;border-radius:14px}
+
+footer{border-top:1px solid var(--border);margin-top:40px;padding:24px;color:var(--muted)}
+
+.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none}
+.modal{position:fixed;inset:0;display:none;align-items:flex-start;justify-content:center;padding-top:10vh}
+.modal.open,.modal-backdrop.open{display:flex}
+.modal .panel{background:var(--surface);border:1px solid var(--border);border-radius:16px;max-width:580px;width:92%;padding:20px;color:var(--text)}
+.modal .panel input,.modal .panel select,.modal .panel textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--border);background:transparent;color:var(--text)}
+.modal .actions{display:flex;gap:10px;margin-top:12px}
+:focus-visible{outline:2px solid var(--ring);outline-offset:2px}
+
+.skip{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.skip:focus{left:8px;top:8px;width:auto;height:auto;background:yellow;color:#000;padding:8px 10px;border-radius:8px;z-index:1000}
