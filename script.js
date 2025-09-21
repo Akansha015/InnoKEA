@@ -31,8 +31,8 @@
     const date=(document.getElementById('trial-date')||{}).value||'';
     const slot=(document.getElementById('trial-slot')||{}).value||'';
     const body=encodeURIComponent(`Free trial request:\nEmail: ${email}\nDate: ${date}\nTime: ${slot}`);
-    window.location.href=`mailto:hello@kea.studio?subject=Free%20Trial%20Request&body=${body}`;
+    window.location.href=`mailto:hello@innokea.com?subject=Free%20Trial%20Request&body=${body}`;
     closeModal();
-    alert('Thanks! Your email client should open with the request. If not, email hello@kea.studio.');
+    alert('Thanks! Your email client should open with the request. If not, email hello@innokea.com.');
   });
 })();
