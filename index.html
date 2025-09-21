@@ -4,129 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KEA — Digital transformation with AI & visual tools</title>
-  <meta name="description" content="KEA helps teams digitally transform with AI, analytics, and visual tools. Book a free trial.">
- <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="skip">Skip to main content</a>
-  <header class="topbar">
-    <div class="utilbar">
-      <button type="button" data-toggle-contrast>High contrast</button>
-      <button type="button" data-toggle-theme>Theme</button>
-    </div>
-    <nav class="site container" aria-label="Primary">
-      <a href="/index.html" class="brand"><img src="/assets/logo.svg" alt="KEA logo" width="90" height="20"></a>
-      <button class="hamburger" type="button" aria-expanded="false" data-toggle-drawer>☰</button>
-      <div class="menu" role="menubar">
-        <a role="menuitem" href="/services.html" >Services</a>
-        <a role="menuitem" href="/solutions.html" >Solutions</a>
-        <a role="menuitem" href="/about.html" >About</a>
-        <a role="menuitem" href="/contact.html" >Contact</a>
-        <button class="linklike cta" type="button" data-open-trial>Book a free trial →</button>
-      </div>
+  <header>
+    <a href="index.html" class="brand">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 40" width="180" height="40" role="img" aria-label="KEA">
+  <rect width="180" height="40" fill="none"/>
+  <text x="4" y="28" font-family="Inter, Segoe UI, Arial" font-size="28" fill="currentColor" font-weight="800" letter-spacing="4">KEA</text>
+</svg>
+</a>
+    <nav>
+      <a href="services.html">Services</a> |
+      <a href="solutions.html">Solutions</a> |
+      <a href="about.html">About</a> |
+      <a href="contact.html">Contact</a>
     </nav>
-    <div id="drawer" class="drawer" role="dialog" aria-label="Mobile menu">
-      <div class="card">
-        <a href="/services.html">Services</a>
-        <a href="/solutions.html">Solutions</a>
-        <a href="/about.html">About</a>
-        <a href="/contact.html">Contact</a>
-        <button type="button" data-open-trial>Book a free trial →</button>
-      </div>
-    </div>
   </header>
-
-<main id="main" class="container">
-  <section class="hero">
-    <div class="row">
-      <div>
-        <span class="badge">🧩 Accessible by design</span>
-        <h1 class="h1">KEA — Digital transformation with AI & visual tools</h1>
-        <p class="lead">We help product and operations teams automate workflows, make data speak, and ship AI features safely.</p>
-        <div style="display:flex; gap:12px; margin-top:16px; flex-wrap:wrap;">
-          <button class="primary" type="button" data-open-trial>Book a free trial →</button>
-          <a class="ghost" href="/services.html">Explore services</a>
-        </div>
-      </div>
-      <div>
-        <div class="grid">
-          <div class="tile"><div>🧠</div><h3>AI Prototyping</h3><p class="muted">LLM workflows, guardrails, and evaluation.</p></div>
-          <div class="tile"><div>📊</div><h3>Visual Dashboards</h3><p class="muted">Executive-ready insights with clear KPIs.</p></div>
-          <div class="tile"><div>🔗</div><h3>Automation</h3><p class="muted">ETL & CRM integrations that reduce toil.</p></div>
-          <div class="tile"><div>🛡️</div><h3>Safety & Governance</h3><p class="muted">Privacy, access, and model risk controls.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Services</h2>
-    <p class="muted">Engagements designed to get you from idea → impact.</p>
-    <div class="list">
-      <article class="card">
-        <h3>AI Strategy & Prototypes</h3>
-        <ul>
-          <li>Use-case mapping</li><li>RAG & evaluation</li><li>Guardrails</li><li>Pilot metrics</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Analytics & Visualization</h3>
-        <ul>
-          <li>Data modeling</li><li>Experiment design</li><li>KPI dashboards</li><li>Insights memos</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>Automation & Ops</h3>
-        <ul>
-          <li>ETL pipelines</li><li>Salesforce/HubSpot</li><li>Data quality</li><li>Monitoring</li>
-        </ul>
-      </article>
-      <article class="card">
-        <h3>AI Safety & Governance</h3>
-        <ul>
-          <li>PII handling</li><li>Access controls</li><li>Model risk</li><li>Audit trails</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-</main>
-
-  <footer class="container">
-    <div>© <span id="y"></span> KEA • Accessible by design • <a href="/contact.html">Contact</a></div>
-  </footer>
-
-  <div id="trial-backdrop" class="modal-backdrop" ></div>
-  <div id="trial-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="trial-title" aria-describedby="trial-desc">
-    <div class="panel">
-      <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
-        <h2 id="trial-title" style="margin:0;">Book a free trial</h2>
-        <button class="ghost" type="button" data-close-modal aria-label="Close">✕</button>
-      </div>
-      <p id="trial-desc" class="muted">We’ll confirm by email and send a calendar invite.</p>
-      <form id="trial-form" class="grid" style="display:grid;gap:10px;">
-        <label>Work email
-          <input id="trial-email" type="email" required placeholder="you@company.com">
-        </label>
-        <label>Preferred date
-          <input id="trial-date" type="date" required>
-        </label>
-        <label>Time window
-          <select id="trial-slot" required>
-            <option value="" disabled selected>Choose…</option>
-            <option>Morning (9–12)</option>
-            <option>Afternoon (12–4)</option>
-            <option>Evening (4–7)</option>
-          </select>
-        </label>
-        <div class="actions">
-          <button class="primary" type="submit">Request trial</button>
-          <button class="ghost" type="button" data-close-modal>Cancel</button>
-        </div>
-      </form>
-    </div>
-  </div>
-
+<main><h1 class='h1'>KEA — Digital transformation with AI & visual tools</h1><p class='lead'>Welcome to KEA homepage.</p></main>
+  <footer><p>© 2025 KEA</p></footer>
   <script src="script.js"></script>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
