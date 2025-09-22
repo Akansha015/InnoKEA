@@ -4,59 +4,130 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>InnoKEA — AI with a human touch</title>
+  <meta name="description" content="InnoKEA helps restaurants, cafés, and businesses transform with AI to deliver smoother customer experiences." />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="home">
-  <!-- Top bar -->
-  <header class="nav">
-    <div class="nav__inner">
-      <a href="index.html" class="brand">
-        <strong>InnoKEA</strong>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Sticky Nav -->
+  <header class="nav" role="banner">
+    <div class="nav__inner container">
+      <a href="#home" class="brand">
+        <img src="assets/logo.png" alt="InnoKEA logo" class="logo"/>
+        <span>InnoKEA</span>
       </a>
-      <nav aria-label="Primary" class="tabs">
-        <a href="about.html" class="tab tab--active">About us</a>
-        <a href="services.html" class="tab">Services</a>
-        <a href="contact.html" class="tab">Contact</a>
+      <nav aria-label="Primary" class="nav__menu">
+        <a href="#about" class="nav__link">About us</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#contact" class="nav__link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- Hero split -->
-  <main>
-    <section class="hero-split">
-      <!-- Left: text + watermark -->
-      <div class="hero-split__copy">
-        <!-- watermark emblem behind text -->
-        <div class="watermark" aria-hidden="true">
-          <svg viewBox="0 0 200 200" width="100%" height="100%" role="img">
-            <g opacity="0.09" fill="none" stroke="currentColor" stroke-width="6">
-              <circle cx="100" cy="100" r="86" />
-              <path d="M55 135 L55 65" />
-              <path d="M86 135 L55 100 L86 65" />
-              <path d="M110 65 H145 M110 100 H142 M110 135 H145"/>
-              <path d="M170 135 L155 65 L140 135 Z" />
-            </g>
-          </svg>
+  <main id="main">
+
+    <!-- 1. HERO -->
+    <section id="home" class="hero" style="--hero:url('assets/hero.jpg')">
+      <div class="hero__overlay"></div>
+      <div class="hero__content container">
+        <h1>AI with a human touch — that’s <span>InnoKEA</span>.</h1>
+        <p>We help restaurants, cafés, and businesses craft seamless customer experiences that last.</p>
+        <div class="hero__cta">
+          <a href="#about" class="btn btn--solid">About us</a>
         </div>
 
-        <h1 class="hero-title">
-          AI with a human touch — that’s <span>InnoKEA.</span>
-        </h1>
-        <p class="hero-sub">
-          We help restaurants, cafés, and businesses craft seamless customer
-          experiences that last.
-        </p>
-
-        <div class="hero-cta">
-          <a class="btn btn--solid" href="about.html">About us</a>
-        </div>
+        <ul class="hero__pillars">
+          <li>AI Prototyping</li>
+          <li>Safety &amp; Governance</li>
+          <li>Automation</li>
+          <li>Visual Dashboards</li>
+        </ul>
       </div>
-
-      <!-- Right: image -->
-      <div class="hero-split__image">
-        <img src="assets/hero.jpg" alt="Team meeting in a café with analytics dashboard on screen" />
+      <div class="hero__watermark" aria-hidden="true">
+        <img src="assets/logo.png" alt="" />
       </div>
     </section>
+
+    <!-- 2. ABOUT -->
+    <section id="about" class="about container">
+      <h2>About InnoKEA</h2>
+      <p>At InnoKEA, we are NEXT GENERATION helping cafés, restaurants, and businesses embrace digital transformation with ease. By integrating AI‑driven solutions, we empower businesses to deliver smoother, smarter, and more engaging customer experiences.</p>
+      <p><strong>Our mission is simple: make technology work for you.</strong></p>
+      <p>From enhancing customer interactions to unlocking data‑driven insights, InnoKEA is your partner in growth. We bring together innovation, creativity, and the latest AI tools to ensure your business not only adapts—but thrives—in today’s fast‑changing digital landscape.</p>
+      <div class="about__bg" aria-hidden="true"></div>
+    </section>
+
+    <!-- 3. SERVICES -->
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Consulting Services</h2>
+        <p class="services__lead">At InnoKEA, we help businesses thrive in today’s fast‑changing digital world by offering expert competitor insights, streamlined data management, and tailored strategies for growth</p>
+
+        <div class="services__grid">
+          <article>
+            <h3>Competitor Research</h3>
+            <p>Uncover key trends, strengths, and opportunities—helping you stay one step ahead.</p>
+          </article>
+          <article>
+            <h3>Data Management</h3>
+            <p>Streamline your data processes and provide insights that fuel smarter decisions.</p>
+          </article>
+          <article>
+            <h3>Strategy Development</h3>
+            <p>Tailored strategies that align with your goals, combining creativity and analytics to drive sustainable growth.</p>
+          </article>
+          <article>
+            <h3>AI Integration</h3>
+            <p>Harness the power of AI—automating processes, unlocking insights, and creating smarter CX.</p>
+          </article>
+        </div>
+
+        <div class="services__mark" aria-hidden="true">
+          <img src="assets/logo.png" alt=""/>
+        </div>
+
+        <div class="services__art" aria-hidden="true">
+          <img src="assets/illustration.jpg" alt="illustration" />
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. CONTACT / CTA -->
+    <section id="contact" class="cta">
+      <div class="container cta__grid">
+        <div>
+          <h2>Grow with us.</h2>
+          <p>Let’s improve your processes together.</p>
+          <div class="meta">
+            <div>
+              <h4>Book your consultation</h4>
+              <a class="link" href="mailto:innokeaus@gmail.com?subject=Consultation%20request%20from%20website">Schedule here</a>
+            </div>
+            <div>
+              <h4>Email</h4>
+              <a class="link" href="mailto:innokeaus@gmail.com">innokeaus@gmail.com</a>
+            </div>
+            <div>
+              <h4>Social</h4>
+              <a class="icon" href="#" aria-label="LinkedIn">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-14h4v2a4 4 0 0 1 2-1z"></path>
+                  <rect x="2" y="9" width="4" height="14"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cta__img">
+          <img src="assets/team.jpg" alt="Team collaborating with documents and laptop" />
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
